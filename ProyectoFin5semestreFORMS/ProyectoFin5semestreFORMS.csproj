@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C862F0FE-F83A-4632-894A-B9F633E60198}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProyectoFin5semestreFORMS</RootNamespace>
+    <AssemblyName>ProyectoFin5semestreFORMS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdministradorForms\ContratosProveedores\ActualizarContratoProvee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministradorForms\ContratosProveedores\ActualizarContratoProvee.Designer.cs">
+      <DependentUpon>ActualizarContratoProvee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministradorForms\ContratosProveedores\CreaContratoProvee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministradorForms\ContratosProveedores\CreaContratoProvee.Designer.cs">
+      <DependentUpon>CreaContratoProvee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministradorForms\ContratosProveedores\VerContratoProvee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministradorForms\ContratosProveedores\VerContratoProvee.Designer.cs">
+      <DependentUpon>VerContratoProvee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministradorForms\MenuContratos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministradorForms\MenuContratos.Designer.cs">
+      <DependentUpon>MenuContratos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministradorForms\MenuProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministradorForms\MenuProveedores.Designer.cs">
+      <DependentUpon>MenuProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministradorForms\ProveedoresAlimentos\ActualizaProveAlimentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministradorForms\ProveedoresAlimentos\ActualizaProveAlimentos.Designer.cs">
+      <DependentUpon>ActualizaProveAlimentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministradorForms\ProveedoresAlimentos\CreaProveeAlimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministradorForms\ProveedoresAlimentos\CreaProveeAlimento.Designer.cs">
+      <DependentUpon>CreaProveeAlimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministradorForms\ProveedoresAlimentos\VerProveAlimentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministradorForms\ProveedoresAlimentos\VerProveAlimentos.Designer.cs">
+      <DependentUpon>VerProveAlimentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministradorForms\ProveedoresSeguridad\ActualizaProveeSeguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministradorForms\ProveedoresSeguridad\ActualizaProveeSeguridad.Designer.cs">
+      <DependentUpon>ActualizaProveeSeguridad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministradorForms\ProveedoresSeguridad\CrearProveeSeguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministradorForms\ProveedoresSeguridad\CrearProveeSeguridad.Designer.cs">
+      <DependentUpon>CrearProveeSeguridad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministradorForms\ProveedoresSeguridad\VerProveeSeguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministradorForms\ProveedoresSeguridad\VerProveeSeguridad.Designer.cs">
+      <DependentUpon>VerProveeSeguridad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministradorForms\Proveedores\ActualizarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministradorForms\Proveedores\ActualizarProveedor.Designer.cs">
+      <DependentUpon>ActualizarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministradorForms\Proveedores\CrearProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministradorForms\Proveedores\CrearProveedor.Designer.cs">
+      <DependentUpon>CrearProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministradorForms\Proveedores\VerProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministradorForms\Proveedores\VerProveedores.Designer.cs">
+      <DependentUpon>VerProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadoForms\Apuestas\ActualizaApuestaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoForms\Apuestas\ActualizaApuestaForm.Designer.cs">
+      <DependentUpon>ActualizaApuestaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadoForms\Apuestas\CreaApuestaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoForms\Apuestas\CreaApuestaForm.Designer.cs">
+      <DependentUpon>CreaApuestaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadoForms\Apuestas\MenuDeApuestas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoForms\Apuestas\MenuDeApuestas.Designer.cs">
+      <DependentUpon>MenuDeApuestas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadoForms\Apuestas\VerApuestaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoForms\Apuestas\VerApuestaForm.Designer.cs">
+      <DependentUpon>VerApuestaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadoForms\AsignacionDeMesas\ActualizarAsignacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoForms\AsignacionDeMesas\ActualizarAsignacion.Designer.cs">
+      <DependentUpon>ActualizarAsignacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadoForms\AsignacionDeMesas\CrearAsignacionDeMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoForms\AsignacionDeMesas\CrearAsignacionDeMesa.Designer.cs">
+      <DependentUpon>CrearAsignacionDeMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadoForms\AsignacionDeMesas\VerAsignacionesDeMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoForms\AsignacionDeMesas\VerAsignacionesDeMesa.Designer.cs">
+      <DependentUpon>VerAsignacionesDeMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadoForms\ControlDeEntrada\ControlDeEntradaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoForms\ControlDeEntrada\ControlDeEntradaForm.Designer.cs">
+      <DependentUpon>ControlDeEntradaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadoForms\Descuentos\ActualizarDescuentoForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoForms\Descuentos\ActualizarDescuentoForms.Designer.cs">
+      <DependentUpon>ActualizarDescuentoForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadoForms\Descuentos\CrearDescuentoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoForms\Descuentos\CrearDescuentoForm.Designer.cs">
+      <DependentUpon>CrearDescuentoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadoForms\Descuentos\Menudedescuento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoForms\Descuentos\Menudedescuento.Designer.cs">
+      <DependentUpon>Menudedescuento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadoForms\Descuentos\VerDescuentosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoForms\Descuentos\VerDescuentosForm.Designer.cs">
+      <DependentUpon>VerDescuentosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadoForms\Mesas\ActualizarMESA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoForms\Mesas\ActualizarMESA.Designer.cs">
+      <DependentUpon>ActualizarMESA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadoForms\Mesas\CrearMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoForms\Mesas\CrearMesa.Designer.cs">
+      <DependentUpon>CrearMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadoForms\Recursos\ActualizarRecursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoForms\Recursos\ActualizarRecursos.Designer.cs">
+      <DependentUpon>ActualizarRecursos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadoForms\Recursos\CreaRecursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoForms\Recursos\CreaRecursos.Designer.cs">
+      <DependentUpon>CreaRecursos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadoForms\Recursos\MenuRecursosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoForms\Recursos\MenuRecursosForm.Designer.cs">
+      <DependentUpon>MenuRecursosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadoForms\Recursos\VerRecursosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoForms\Recursos\VerRecursosForm.Designer.cs">
+      <DependentUpon>VerRecursosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioVerSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioVerSesion.Designer.cs">
+      <DependentUpon>FormularioVerSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAdministrativo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAdministrativo.Designer.cs">
+      <DependentUpon>MenuAdministrativo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDeEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDeEmpleados.Designer.cs">
+      <DependentUpon>MenuDeEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EmpleadoForms\Mesas\VerMesaDeJuego.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoForms\Mesas\VerMesaDeJuego.Designer.cs">
+      <DependentUpon>VerMesaDeJuego.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdministradorForms\ContratosProveedores\ActualizarContratoProvee.resx">
+      <DependentUpon>ActualizarContratoProvee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministradorForms\ContratosProveedores\CreaContratoProvee.resx">
+      <DependentUpon>CreaContratoProvee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministradorForms\ContratosProveedores\VerContratoProvee.resx">
+      <DependentUpon>VerContratoProvee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministradorForms\MenuContratos.resx">
+      <DependentUpon>MenuContratos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministradorForms\MenuProveedores.resx">
+      <DependentUpon>MenuProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministradorForms\ProveedoresAlimentos\ActualizaProveAlimentos.resx">
+      <DependentUpon>ActualizaProveAlimentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministradorForms\ProveedoresAlimentos\CreaProveeAlimento.resx">
+      <DependentUpon>CreaProveeAlimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministradorForms\ProveedoresAlimentos\VerProveAlimentos.resx">
+      <DependentUpon>VerProveAlimentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministradorForms\ProveedoresSeguridad\ActualizaProveeSeguridad.resx">
+      <DependentUpon>ActualizaProveeSeguridad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministradorForms\ProveedoresSeguridad\CrearProveeSeguridad.resx">
+      <DependentUpon>CrearProveeSeguridad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministradorForms\ProveedoresSeguridad\VerProveeSeguridad.resx">
+      <DependentUpon>VerProveeSeguridad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministradorForms\Proveedores\ActualizarProveedor.resx">
+      <DependentUpon>ActualizarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministradorForms\Proveedores\CrearProveedor.resx">
+      <DependentUpon>CrearProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministradorForms\Proveedores\VerProveedores.resx">
+      <DependentUpon>VerProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadoForms\Apuestas\ActualizaApuestaForm.resx">
+      <DependentUpon>ActualizaApuestaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadoForms\Apuestas\CreaApuestaForm.resx">
+      <DependentUpon>CreaApuestaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadoForms\Apuestas\MenuDeApuestas.resx">
+      <DependentUpon>MenuDeApuestas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadoForms\Apuestas\VerApuestaForm.resx">
+      <DependentUpon>VerApuestaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadoForms\AsignacionDeMesas\ActualizarAsignacion.resx">
+      <DependentUpon>ActualizarAsignacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadoForms\AsignacionDeMesas\CrearAsignacionDeMesa.resx">
+      <DependentUpon>CrearAsignacionDeMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadoForms\AsignacionDeMesas\VerAsignacionesDeMesa.resx">
+      <DependentUpon>VerAsignacionesDeMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadoForms\ControlDeEntrada\ControlDeEntradaForm.resx">
+      <DependentUpon>ControlDeEntradaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadoForms\Descuentos\ActualizarDescuentoForms.resx">
+      <DependentUpon>ActualizarDescuentoForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadoForms\Descuentos\CrearDescuentoForm.resx">
+      <DependentUpon>CrearDescuentoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadoForms\Descuentos\Menudedescuento.resx">
+      <DependentUpon>Menudedescuento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadoForms\Descuentos\VerDescuentosForm.resx">
+      <DependentUpon>VerDescuentosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadoForms\Mesas\ActualizarMESA.resx">
+      <DependentUpon>ActualizarMESA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadoForms\Mesas\CrearMesa.resx">
+      <DependentUpon>CrearMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadoForms\Recursos\ActualizarRecursos.resx">
+      <DependentUpon>ActualizarRecursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadoForms\Recursos\CreaRecursos.resx">
+      <DependentUpon>CreaRecursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadoForms\Recursos\MenuRecursosForm.resx">
+      <DependentUpon>MenuRecursosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadoForms\Recursos\VerRecursosForm.resx">
+      <DependentUpon>VerRecursosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioVerSesion.resx">
+      <DependentUpon>FormularioVerSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAdministrativo.resx">
+      <DependentUpon>MenuAdministrativo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuDeEmpleados.resx">
+      <DependentUpon>MenuDeEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EmpleadoForms\Mesas\VerMesaDeJuego.resx">
+      <DependentUpon>VerMesaDeJuego.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
